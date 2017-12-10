@@ -1,5 +1,6 @@
 To deploy, create a file called "variables.tf" with the following content:
 
+==
 variable "access_key" {
   default = "<AWS Access key>"
 }
@@ -15,5 +16,6 @@ variable "admin_networks" {
 variable "admin_ssh_key" {
   default = "<SSH key>"
 }
+==
 
-and run "terraform init", then "terraform apply".
+and run "terraform init", then "terraform apply". The IP address of the instance launched will be displayed.
