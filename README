@@ -1,0 +1,19 @@
+To deploy, create a file called "variables.tf" with the following content:
+
+variable "access_key" {
+  default = "<AWS Access key>"
+}
+
+variable "secret_key" {
+  default = "<AWS Secret key>"
+}
+
+variable "admin_networks" {
+  default = [ "<admin network 1>", "<admin network 2>"... ]
+}
+
+variable "admin_ssh_key" {
+  default = "<SSH key>"
+}
+
+and run "terraform init", then "terraform apply".
